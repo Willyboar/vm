@@ -1,0 +1,23 @@
+# Iterative factorial of 5 printed as a decimal followed by a newline.
+Push 1
+Push 5
+
+label loop
+    Get 0
+    Get 1
+    Mul
+    Set 0
+    Pop
+
+    Decr
+    JE done
+    Jump loop
+
+label done
+    Get 0
+    Print
+    Pop
+
+    Push 10
+    PrintC
+    Pop
